@@ -24,7 +24,6 @@ public class Main {
             writer.write(data);
 
         } catch (IOException e) {
-            var staunch = 1;
             throw new RuntimeException(e);
         }
     }

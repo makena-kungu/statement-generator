@@ -7,7 +7,7 @@ public record Entry(String description, double value) implements Comparable<Entr
     }
 
     public static Entry uji(double value) {
-        return new Entry("uji", value);
+        return new Entry("Uji", value);
     }
 
     @Override

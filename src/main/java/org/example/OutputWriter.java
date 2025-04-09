@@ -5,13 +5,10 @@ import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.ss.util.RegionUtil;
 import org.apache.poi.xssf.usermodel.*;
 import org.example.data.*;
-import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor;
 
-import java.awt.Color;
 import java.io.Closeable;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.text.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -38,8 +35,8 @@ public class OutputWriter implements Closeable {
 	private final XSSFCellStyle sectionHeading;
 	private final XSSFCellStyle sectionFooter;
 	private final XSSFCellStyle ultimateFooter;
-	private final XSSFCellStyle bodyStyleEven;
-	private final XSSFCellStyle bodyStyleOdd;
+	private final XSSFCellStyle bodyNameStyle;
+	private final XSSFCellStyle bodyValueStyle;
 	private final BorderStyle BORDER_STYLE = BorderStyle.THIN;
 
 	private final NumberFormat FORMAT = DecimalFormat.getCurrencyInstance(Locale.forLanguageTag("en-ke"));
@@ -82,19 +79,18 @@ public class OutputWriter implements Closeable {
 		sectionFooter.setIndention(indentHNF);
 		sectionFooter.setBorderRight(borderStyle);
 
-		bodyStyleEven = wb.createCellStyle();
+		bodyNameStyle = wb.createCellStyle();
 		var bodyFont = wb.createFont();
 		bodyFont.setBold(false);
-		bodyStyleEven.setFont(bodyFont);
-		bodyStyleEven.setIndention(indentBody);
-		bodyStyleEven.setBorderLeft(borderStyle);
-		bodyStyleEven.setBorderRight(borderStyle);
-		bodyStyleOdd = wb.createCellStyle();
-		bodyStyleOdd.cloneStyleFrom(bodyStyleEven);
-		bodyStyleOdd.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-//        XSSFColor.from()
+		bodyNameStyle.setFont(bodyFont);
+		bodyNameStyle.setIndention(indentBody);
+		bodyNameStyle.setBorderLeft(borderStyle);
+		bodyNameStyle.setBorderRight(borderStyle);
 
-		bodyStyleOdd.setFillForegroundColor(new XSSFColor(new byte[]{(byte) 240, (byte) 248, (byte) 255}).getIndex());
+		bodyValueStyle = wb.createCellStyle();
+		bodyValueStyle.cloneStyleFrom(bodyNameStyle);
+		bodyValueStyle.setIndention(((short) 0));
+		bodyValueStyle.setAlignment(HorizontalAlignment.RIGHT);
 
 		ultimateFooter = wb.createCellStyle();
 		ultimateFooter.cloneStyleFrom(sectionFooter);
@@ -230,11 +226,12 @@ public class OutputWriter implements Closeable {
 		max2(value);
 		int rownum = row();
 		var row = sheet.createRow(rownum);
-		//first column contains the description, the second the value
-		String[] values = new String[]{desc, value};
-		for (int i = 0, len = values.length; i < len; i++)
-			cell(row, i, bodyStyleEven).setCellValue(values[i]);
 
+		row.setHeight((short) (sheet.getDefaultRowHeight() + 6));
+		//first column contains the description, the second the value
+		cell(row, 0, bodyNameStyle).setCellValue(desc);
+		XSSFCell cell = cell(row, 1, bodyValueStyle);
+		cell.setCellValue(value);
 	}
 
 	private XSSFRow printFooter(Entry entry) {
@@ -264,8 +261,8 @@ public class OutputWriter implements Closeable {
 		return s;
 	}
 
-	private XSSFCell cell(XSSFRow row, int index, CellStyle style) {
-		var cell = row.createCell(index, CellType.STRING);
+	private XSSFCell cell(XSSFRow row, int columnIndex, CellStyle style) {
+		var cell = row.createCell(columnIndex, CellType.STRING);
 		cell.setCellStyle(style);
 		return cell;
 	}
@@ -295,6 +292,7 @@ public class OutputWriter implements Closeable {
 		return ((int) (count + 4 * 1.14388) * 256);
 	}
 
+	@SuppressWarnings("unused")
 	private int width(AtomicInteger count) {
 		return width(count.get());
 	}

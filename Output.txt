@@ -1,0 +1,305 @@
+Income Statement for Week Ended on 2024-08-04
+Revenue
+Missalettes : 1600.0
+uji : 1250.0
+Total Revenue : 2850.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 955.0
+Total Cost of Goods Sold : 1755.0
+
+Gross Profit: 1095.0
+
+
+Net Profit: 1095.0
+
+
+Income Statement for Week Ended on 2024-08-11
+Revenue
+Missalettes : 1600.0
+uji : 635.0
+Total Revenue : 2235.0
+
+Cost of Goods Sold
+Missalettes : 600.0
+uji : 925.0
+Total Cost of Goods Sold : 1525.0
+
+Gross Profit: 710.0
+
+
+Net Profit: 710.0
+
+
+Income Statement for Week Ended on 2024-08-18
+Revenue
+Missalettes : 1600.0
+uji : 1065.0
+Total Revenue : 2665.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 925.0
+Total Cost of Goods Sold : 1725.0
+
+Gross Profit: 940.0
+
+
+Net Profit: 940.0
+
+
+Income Statement for Week Ended on 2024-08-25
+Revenue
+Missalettes : 1600.0
+uji : 2060.0
+Total Revenue : 3660.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 925.0
+Total Cost of Goods Sold : 1725.0
+
+Gross Profit: 1935.0
+
+
+Expenses
+Deanery Festivals Trivia Mass Contribution : 820.0
+Total Expenses : 820.0
+
+Net Profit: 1115.0
+
+
+Income Statement for Week Ended on 2024-09-01
+Revenue
+Missalettes : 0.0
+uji : 0.0
+Total Revenue : 0.0
+
+Cost of Goods Sold
+Missalettes : 0.0
+uji : 0.0
+Total Cost of Goods Sold : 0.0
+
+Gross Profit: 0.0
+
+
+Net Profit: 0.0
+
+
+Income Statement for Week Ended on 2024-09-08
+Revenue
+Missalettes : 1600.0
+uji : 1732.0
+Total Revenue : 3332.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 925.0
+Total Cost of Goods Sold : 1725.0
+
+Gross Profit: 1607.0
+
+
+Net Profit: 1607.0
+
+
+Income Statement for Week Ended on 2024-09-15
+Revenue
+Missalettes : 1800.0
+uji : 1280.0
+Total Revenue : 3080.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 925.0
+Total Cost of Goods Sold : 1725.0
+
+Gross Profit: 1355.0
+
+
+Expenses
+Zonal Festivals Matega Contribution : 410.0
+Total Expenses : 410.0
+
+Net Profit: 945.0
+
+
+Income Statement for Week Ended on 2024-09-22
+Revenue
+Missalettes : 1600.0
+uji : 775.0
+Total Revenue : 2375.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 630.0
+Total Cost of Goods Sold : 1430.0
+
+Gross Profit: 945.0
+
+
+Incomes
+Grant : 100.0
+Total Incomes : 100.0
+
+Expenses
+Deanery Cultural Day Mass Contribution : 820.0
+Total Expenses : 820.0
+
+Net Profit: 225.0
+
+
+Income Statement for Week Ended on 2024-09-29
+Revenue
+Missalettes : 1600.0
+uji : 1025.0
+Total Revenue : 2625.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 630.0
+Total Cost of Goods Sold : 1430.0
+
+Gross Profit: 1195.0
+
+
+Expenses
+ADN Festivals Trivia Matega Contribution : 410.0
+Total Expenses : 410.0
+
+Net Profit: 785.0
+
+
+Income Statement for Week Ended on 2024-10-06
+Revenue
+Missalettes : 1600.0
+uji : 740.0
+Total Revenue : 2340.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 700.0
+Total Cost of Goods Sold : 1500.0
+
+Gross Profit: 840.0
+
+
+Net Profit: 840.0
+
+
+Income Statement for Week Ended on 2024-10-13
+Revenue
+Missalettes : 1600.0
+uji : 1540.0
+Total Revenue : 3140.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 700.0
+Total Cost of Goods Sold : 1500.0
+
+Gross Profit: 1640.0
+
+
+Expenses
+Joint Mass Contribution : 2550.0
+Total Expenses : 2550.0
+
+Net Profit: -910.0
+
+
+Income Statement for Week Ended on 2024-10-20
+Revenue
+Missalettes : 1600.0
+uji : 835.0
+Total Revenue : 2435.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 630.0
+Total Cost of Goods Sold : 1430.0
+
+Gross Profit: 1005.0
+
+
+Incomes
+Debt repayment for Goods Sold on Credit : 220.0
+Total Incomes : 220.0
+
+Net Profit: 1225.0
+
+
+Income Statement for Week Ended on 2024-10-27
+Revenue
+Missalettes : 1485.0
+uji : 1620.0
+Total Revenue : 3105.0
+
+Cost of Goods Sold
+Missalettes : 800.0
+uji : 630.0
+Total Cost of Goods Sold : 1430.0
+
+Gross Profit: 1675.0
+
+
+Expenses
+Sufuria : 4260.0
+Ledger Book : 350.0
+Total Expenses : 4610.0
+
+Net Profit: -2935.0
+
+
+Income Statement for Week Ended on 2024-11-03
+Revenue
+Missalettes : 0.0
+uji : 0.0
+Total Revenue : 0.0
+
+Cost of Goods Sold
+Missalettes : 0.0
+uji : 0.0
+Total Cost of Goods Sold : 0.0
+
+Gross Profit: 0.0
+
+
+Net Profit: 0.0
+
+
+Income Statement for Week Ended on 2024-11-10
+Revenue
+Missalettes : 0.0
+uji : 0.0
+Total Revenue : 0.0
+
+Cost of Goods Sold
+Missalettes : 0.0
+uji : 0.0
+Total Cost of Goods Sold : 0.0
+
+Gross Profit: 0.0
+
+
+Net Profit: 0.0
+
+
+Income Statement for Week Ended on 2024-11-17
+Revenue
+Missalettes : 0.0
+uji : 0.0
+Total Revenue : 0.0
+
+Cost of Goods Sold
+Missalettes : 0.0
+uji : 0.0
+Total Cost of Goods Sold : 0.0
+
+Gross Profit: 0.0
+
+
+Net Profit: 0.0
+
+Total Net Profit: 5642.0

@@ -1,0 +1,2 @@
+=SUMIF($A$2:$A$290,"Total Expenses",$B$2:$B$290)
+=SUMIF($A$2:$A$290,"Gross Profit",$B$2:$B$290)

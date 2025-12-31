@@ -102,7 +102,7 @@ public class OutputWriter implements Closeable {
 		var folder = Resources.outputFolder().getPath();
 		var format = new SimpleDateFormat("yyyyMMdd_hhmmss");
 		var date = format.format(new Date());
-		return folder + "\\Weekly Income Statement " + date + ".xlsx";
+		return folder + "\\Weekly Income Statement as at " + date + ".xlsx";
 	}
 
 	public static OutputWriter instance() throws IOException {
@@ -133,7 +133,9 @@ public class OutputWriter implements Closeable {
 		setup.setPaperSize(PaperSize.A4_PAPER);
 
 
-		try (FileOutputStream fileOutputStream = new FileOutputStream(path())) {
+		String outputPath = path();
+		System.out.println("Output Path = " + outputPath);
+		try (FileOutputStream fileOutputStream = new FileOutputStream(outputPath)) {
 			wb.write(fileOutputStream);
 		}
 	}
